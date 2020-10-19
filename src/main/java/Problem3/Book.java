@@ -28,9 +28,6 @@ public abstract class Book implements StoreMediaOperations {
         if (other == null) {
             System.out.println("Error: null Book object");
         }
-        else if (this.id == other.id && this.title == other.title && this.author == other.author)
-        {
-            return true;
-        }
+        return (this.id == other.id && this.title == other.title && this.author == other.author);
     }
 }
