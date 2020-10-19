@@ -5,13 +5,15 @@ public class MovieAction extends Movie {
     private int lateFeePerDayInDollar = 5;
 
     public MovieAction(String rating, String title) {
-        // homework
-        // tip: use the 'super' keyword
+        super (title, rating);
+        this.title = title;
+        this.rating = rating;
     }
 
     public MovieAction(MovieAction anotherMovie) {
-        // homework
-        // tip: use the 'super' keyword
+        super (anotherMovie);
+        title = anotherMovie.title;
+        rating = anotherMovie.rating;
     }
 
     @Override

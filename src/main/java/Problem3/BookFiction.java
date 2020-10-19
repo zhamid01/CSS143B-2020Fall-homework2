@@ -11,7 +11,6 @@ public class BookFiction extends Book {
         this.genres = genres;
         this.title = title;
         this.author = author;
-
     }
 
     // copy constructor
@@ -29,11 +28,6 @@ public class BookFiction extends Book {
 
     @Override
     public int calcLateFees(int numOfDaysPastDue) {
-        if (numOfDaysPastDue < 5) {
             return (numOfDaysPastDue * lateFeePerDayInDollar);
-        }
-        else {
-            return (2 * numOfDaysPastDue * lateFeePerDayInDollar);
-        }
     }
 }
