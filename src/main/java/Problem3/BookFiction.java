@@ -7,14 +7,16 @@ public class BookFiction extends Book {
     private String genres;
 
     public BookFiction(String title, String author, String genres) {
-        // homework
-        // tip: use the 'super' keyword
+        title = super.title;
+        author = super.author;
+        this.genres = genres;
     }
 
     // copy constructor
     public BookFiction(BookFiction anotherBook) {
-        // homework
-        // tip: use the 'super' keyword
+        genres = anotherBook.genres;
+        super.title = anotherBook.title;
+        super.title = anotherBook.author;
     }
 
     @Override
@@ -24,6 +26,11 @@ public class BookFiction extends Book {
 
     @Override
     public int calcLateFees(int numOfDaysPastDue) {
-        // homework
+        if (numOfDaysPastDue < 5) {
+            return (numOfDaysPastDue * lateFeePerDayInDollar);
+        }
+        else {
+            return (2 * numOfDaysPastDue * lateFeePerDayInDollar);
+        }
     }
 }
