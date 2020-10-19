@@ -11,21 +11,17 @@ public class Problem2 {
         int tempArray[] = new int[nums.length - 1];
         int placeHolder = 0;
         for (int i = 0; i < nums.length - 1; i++) {
-            int next = nums[i + 1];
             int holder;
 
             if (nums.length - 1 == 0) {
                 return 1;
             }
-            else if (nums[i] == next) {
-                tempArray[placeHolder] = nums[i];
-                placeHolder++;
+            else if (nums[i] != nums[i++]) {
+                tempArray[placeHolder++] = nums[i];
             }
-            else if (nums[i] != next) {
-                tempArray[placeHolder] = nums[i];
-                tempArray[placeHolder++] = next;
-            }
+            tempArray[placeHolder++] = nums[i];
+            placeHolder++;
         }
-        return tempArray.length; //PLACE HOLDER
+        return tempArray.length;
     }
 }
