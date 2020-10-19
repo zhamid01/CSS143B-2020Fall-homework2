@@ -8,7 +8,7 @@ public class Problem2 {
     // Do not use extra space for another array. Solution to be in-pace with O(1) extra memory
     public static int remove(int[] nums) {
 
-        int tempArray[] = new int[nums.length - 1];
+        int tempArray[] = new int[nums.length];
         int placeHolder = 0;
         for (int i = 0; i < nums.length - 1; i++) {
             int holder;
