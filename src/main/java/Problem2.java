@@ -20,8 +20,10 @@ public class Problem2 {
                 tempArray[placeHolder++] = nums[i];
             }
             tempArray[placeHolder++] = nums[i];
-            placeHolder++;
         }
-        return tempArray.length;
+        for (int i = 0; i < placeHolder; i++) {
+            nums[i] = tempArray[i];
+        }
+        return placeHolder;
     }
 }
