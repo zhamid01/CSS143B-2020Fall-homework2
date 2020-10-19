@@ -1,5 +1,5 @@
 public class Problem2 {
-
+    //https://www.geeksforgeeks.org/remove-duplicates-sorted-array/
     /*
     Describe your algorithm here in up to 5 sentences:
      */
@@ -21,7 +21,7 @@ public class Problem2 {
             }
             tempArray[placeHolder++] = nums[i];
         }
-        for (int i = 0; i < placeHolder; i++) {
+        for (int i = 0; i < placeHolder + 1; i++) {
             nums[i] = tempArray[i];
         }
         return placeHolder;
