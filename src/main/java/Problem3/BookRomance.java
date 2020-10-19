@@ -6,10 +6,14 @@ public class BookRomance extends Book {
 
     public BookRomance(String title, String author) {
         super (title, author);
+        this.title = title;
+        this.author = author;
     }
 
     public BookRomance(BookRomance anotherBook) {
         super (anotherBook);
+        author = anotherBook.author;
+        title = anotherBook.title;
     }
 
     @Override
