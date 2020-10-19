@@ -23,6 +23,11 @@ public class MovieAction extends Movie {
 
     @Override
     public int calcLateFees(int numOfDaysPastDue) {
-        // homework
+        if (numOfDaysPastDue < 5) {
+            return (numOfDaysPastDue * lateFeePerDayInDollar);
+        }
+        else {
+            return (2 * numOfDaysPastDue * lateFeePerDayInDollar);
+        }
     }
 }
