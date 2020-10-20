@@ -1,8 +1,14 @@
 public class Problem2 {
-    //https://www.geeksforgeeks.org/remove-duplicates-sorted-array/
+
     /*
-    Describe your algorithm here in up to 5 sentences:
-     */
+    Here I start by checking if there is an array with one value and returning that.
+    Then I continue to check through the array to see if one value is not equal to the next, then
+    setting that value in the temporary array. Then assigning the values of the temporary array to the original array,
+    and returning the value of the placeHolder int as that was used to keep track of the values in stored in the arrays.
+
+    These sites were used as help:
+    https://www.geeksforgeeks.org/remove-duplicates-sorted-array/
+    */
 
     // Do not change signature (function name, parameters and return type)
     // Do not use extra space for another array. Solution to be in-pace with O(1) extra memory
