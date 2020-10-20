@@ -6,24 +6,27 @@ public class Problem1 {
 
     // Do not change signature (function name, parameters type, and return type)
     public static void colorSort(int[] nums) {
-        int previous;
-        int next;
-        int holder;
-
-        for (int i = 1; i < nums.length - 1; i++) {
-            previous = nums[i - 1];
-            next = nums[i + 1];
-            if (previous <= nums[i])
-            {
-                continue;
+        int first = 0;
+        int middle = 0;
+        int holder = 0;
+        int last = nums.length - 1;
+        while (middle <= last) {
+            if (nums[middle] == 0) {
+                holder = nums[first];
+                nums[first] =  nums[middle];
+                nums[middle] = holder;
+                first++;
+                middle++;
             }
-            else if (next < nums[i])
-            {
-                holder = nums[i];
-                nums[i] = next;
-                next = holder;
+            else if (nums[middle] == 1) {
+                middle++;
+            }
+            else if (nums[middle] == 2) {
+                holder = nums[middle];
+                nums[middle] = nums[last];
+                nums[last] = holder;
+                last--;
             }
         }
-
     }
 }
