@@ -9,7 +9,8 @@ public class Problem1 {
     These sites were used as help:
     https://www.geeksforgeeks.org/sort-an-array-of-0s-1s-and-2s/
 
-    I also watched the video provided by the Professor. That helped me with the logic of meeting in the middle.
+    I also watched the video provided by the Professor. That helped me with the logic of meeting in the middle,
+    and assigning values to the start, end, and middle.
     */
 
     // Do not change signature (function name, parameters type, and return type)
