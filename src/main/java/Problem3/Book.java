@@ -2,8 +2,6 @@ package Problem3;
 
 import java.util.UUID;
 
-//https://www.geeksforgeeks.org/copy-constructor-in-java/
-
 public abstract class Book implements StoreMediaOperations {
     UUID id;
     String title;
