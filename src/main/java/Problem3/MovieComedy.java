@@ -22,7 +22,9 @@ public class MovieComedy extends Movie {
 
     @Override
     public int calcLateFees(int numOfDaysPastDue) {
-        int fee = numOfDaysPastDue * lateFeePerDayInDollar;
-        return fee;
+        if (numOfDaysPastDue > 0) {
+            return (numOfDaysPastDue * lateFeePerDayInDollar);
+        }
+        return 0;
     }
 }
